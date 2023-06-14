@@ -1,0 +1,14 @@
+{
+  "items": [
+    {"driver": "John", "type": "cargo", "name": "ТС #1"},
+    {"driver": "Alex", "type": "cargo", "name": "ТС #2"},
+    {"driver": "Jake", "type": "cargo", "name": "ТС #3"},
+    {"driver": "Barry", "type": "cargo", "name": "ТС #4"},
+    {"driver": "Helen", "type": "passenger", "name": "ТС #5"},
+    {"driver": "Jane", "type": "passenger", "name": "ТС #6"},
+    {"driver": "Bob", "type": "passenger", "name": "ТС #7"},
+    {"driver": "Rally", "type": "spec", "name": "ТС #8"},
+    {"driver": "Willy", "type": "spec", "name": "ТС #9"},
+    {"driver": "Chriss", "type": "spec", "name": "ТС #10"}
+  ]
+}
