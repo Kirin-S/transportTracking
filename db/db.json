@@ -1,14 +1,14 @@
 {
   "items": [
-    {"driver": "John", "type": "cargo", "name": "ТС #1"},
-    {"driver": "Alex", "type": "cargo", "name": "ТС #2"},
-    {"driver": "Jake", "type": "cargo", "name": "ТС #3"},
-    {"driver": "Barry", "type": "cargo", "name": "ТС #4"},
-    {"driver": "Helen", "type": "passenger", "name": "ТС #5"},
-    {"driver": "Jane", "type": "passenger", "name": "ТС #6"},
-    {"driver": "Bob", "type": "passenger", "name": "ТС #7"},
-    {"driver": "Rally", "type": "spec", "name": "ТС #8"},
-    {"driver": "Willy", "type": "spec", "name": "ТС #9"},
-    {"driver": "Chriss", "type": "spec", "name": "ТС #10"}
+    {"driver": "John", "category": "cargo", "transportName": "ТС #1"},
+    {"driver": "Alex", "category": "cargo", "transportName": "ТС #2"},
+    {"driver": "Jake", "category": "cargo", "transportName": "ТС #3"},
+    {"driver": "Barry", "category": "cargo", "transportName": "ТС #4"},
+    {"driver": "Helen", "category": "passenger", "transportName": "ТС #5"},
+    {"driver": "Jane", "category": "passenger", "transportName": "ТС #6"},
+    {"driver": "Bob", "category": "passenger", "transportName": "ТС #7"},
+    {"driver": "Rally", "category": "spec", "transportName": "ТС #8"},
+    {"driver": "Willy", "category": "spec", "transportName": "ТС #9"},
+    {"driver": "Chriss", "category": "spec", "transportName": "ТС #10"}
   ]
 }

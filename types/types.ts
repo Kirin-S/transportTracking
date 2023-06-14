@@ -1,5 +1,5 @@
-interface ITransport {
-  name: string;
+export interface ITransport {
+  transportName: string;
   driver: string;
-  type: string;
+  category: string;
 }
