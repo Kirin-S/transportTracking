@@ -16,6 +16,7 @@ const Icons: FC<IIcons> = ({icon}) => {
     cargo: require('../../static/icons/truck.png'),
     passenger: require('../../static/icons/sedan.png'),
     specTransport: require('../../static/icons/forklift.png'),
+    back: require('../../static/icons/back.png'),
   }
 
   if (!icons[icon]) {

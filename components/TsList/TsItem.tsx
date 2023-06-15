@@ -6,13 +6,14 @@ interface ITransportItem {
   transportName: string;
   category: string;
   driver: string;
+  navigation: any;
 }
 
-const TsItem: FC<ITransportItem> = ({ transportName, category, driver }) => {
+const TsItem: FC<ITransportItem> = ({ transportName, category, driver, navigation }) => {
   const { t } = useTranslation();
 
   return (
-    <TouchableOpacity style={styles.card}>
+    <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('DriverScreen')}>
       <Text style={styles.transportText}>{t('Transport')}: {transportName}</Text>
       <Text style={styles.categoryText}>{t('Category')}: {t(category)}</Text>
       <Text style={styles.driverText}>{t('Driver')}: {driver}</Text>

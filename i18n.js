@@ -19,7 +19,11 @@ i18n
               "Driver": "Driver",
               "TS List": "List",
               "Map": "Map",
-              "Settings": "Settings"
+              "Settings": "Settings",
+              "Driver Screen Title": "Driver Info",
+              "Phone Number": "Phone number",
+              "Call Button": "Call",
+              "Message Button": "Message"
             }
           },
           ru: {
@@ -35,7 +39,11 @@ i18n
               "Driver": "Водитель",
               "TS List": "Список",
               "Map": "Карта",
-              "Settings": "Настройки"
+              "Settings": "Настройки",
+              "Driver Screen Title": "Информация о водителе",
+              "Phone Number": "Номер телефона",
+              "Call Button": "Позвонить",
+              "Message Button": "Написать"
             }
           }
       },

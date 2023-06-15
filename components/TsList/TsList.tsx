@@ -7,7 +7,7 @@ import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { ITransport } from '../../types/types';
 import { useTranslation } from 'react-i18next';
 
-const TsList = () => {
+const TsList = ({ navigation }: any) => {
   const { t } = useTranslation();
   const [data, setData] = useState<ITransport[]>(db.items);
   const [showMenu, setShowMenu] = useState(false);
@@ -88,7 +88,7 @@ const TsList = () => {
 
       <FlatList
         data={data}
-        renderItem={({item}) => <TsItem {...item} />}
+        renderItem={({item}) => <TsItem {...item} navigation={navigation} />}
       />
     </View>
   )

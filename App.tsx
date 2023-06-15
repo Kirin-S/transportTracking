@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import { BottomNavigation } from 'react-native-paper';
 import Settings from './components/SettingsScreen/Settings';
-import TsList from './components/TsList/TsList';
 import MapScreen from './components/MapScreen/MapScreen';
 import Icons from './UI/Icons/Icons';
 import { useTranslation } from 'react-i18next';
+import { NavigationContainer } from '@react-navigation/native';
+import TransportScene from './components/TsList/TransportScene';
 
 function App() {
   const { t } = useTranslation();
@@ -18,17 +19,19 @@ function App() {
   ];
 
   const renderScene = BottomNavigation.SceneMap({
-    tsList: () => <TsList />,
+    tsList: () => <TransportScene />,
     mapScreen: () => <MapScreen />,
     settings: () => <Settings lang={lang} setLang={setLang} />
   });
 
   return (
-    <BottomNavigation
-      navigationState={{ index, routes }}
-      onIndexChange={setIndex}
-      renderScene={renderScene}
-    />
+    <NavigationContainer>
+      <BottomNavigation
+        navigationState={{ index, routes }}
+        onIndexChange={setIndex}
+        renderScene={renderScene}
+      />
+    </NavigationContainer>
   );
 }
 
