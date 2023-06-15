@@ -1,14 +1,114 @@
 {
   "items": [
-    {"driver": "John", "category": "cargo", "transportName": "ТС #1"},
-    {"driver": "Alex", "category": "cargo", "transportName": "ТС #2"},
-    {"driver": "Jake", "category": "cargo", "transportName": "ТС #3"},
-    {"driver": "Barry", "category": "cargo", "transportName": "ТС #4"},
-    {"driver": "Helen", "category": "passenger", "transportName": "ТС #5"},
-    {"driver": "Jane", "category": "passenger", "transportName": "ТС #6"},
-    {"driver": "Bob", "category": "passenger", "transportName": "ТС #7"},
-    {"driver": "Rally", "category": "spec", "transportName": "ТС #8"},
-    {"driver": "Willy", "category": "spec", "transportName": "ТС #9"},
-    {"driver": "Chriss", "category": "spec", "transportName": "ТС #10"}
+    {
+      "driver": "John",
+      "category": "Cargo",
+      "transportName": "ТС #1",
+      "position": {
+        "latitude": 56.327527,
+        "longitude": 43.915138,
+        "latitudeDelta": 0.01,
+        "longitudeDelta": 0.01
+      }
+    },
+    {
+      "driver": "Alex",
+      "category": "Cargo",
+      "transportName": "ТС #2",
+      "position": {
+        "latitude": 56.275769,
+        "longitude": 44.030983,
+        "latitudeDelta": 0.01,
+        "longitudeDelta": 0.01
+      }
+    },
+    {
+      "driver": "Jake",
+      "category": "Cargo",
+      "transportName": "ТС #3",
+      "position": {
+        "latitude": 55.420494,
+        "longitude": 43.910944,
+        "latitudeDelta": 0.01,
+        "longitudeDelta": 0.01
+      }
+    },
+    {
+      "driver": "Barry",
+      "category": "Cargo",
+      "transportName": "ТС #4",
+      "position": {
+        "latitude": 54.959115,
+        "longitude": 41.363721,
+        "latitudeDelta": 0.01,
+        "longitudeDelta": 0.01
+      }
+    },
+    {
+      "driver": "Helen",
+      "category": "Passenger",
+      "transportName": "ТС #5",
+      "position": {
+        "latitude": 56.830533,
+        "longitude": 35.969181,
+        "latitudeDelta": 0.01,
+        "longitudeDelta": 0.01
+      }
+    },
+    {
+      "driver": "Jane",
+      "category": "Passenger",
+      "transportName": "ТС #6",
+      "position": {
+        "latitude": 56.834148,
+        "longitude": 35.965169,
+        "latitudeDelta": 0.01,
+        "longitudeDelta": 0.01
+      }
+    },
+    {
+      "driver": "Bob",
+      "category": "Passenger",
+      "transportName": "ТС #7",
+      "position": {
+        "latitude": 54.495866,
+        "longitude": 36.231622,
+        "latitudeDelta": 0.01,
+        "longitudeDelta": 0.01
+      }
+    },
+    {
+      "driver": "Rally",
+      "category": "Spec",
+      "transportName": "ТС #8",
+      "position": {
+        "latitude": 55.740833,
+        "longitude": 37.694309,
+        "latitudeDelta": 0.01,
+        "longitudeDelta": 0.01
+      }
+    },
+    {
+      "driver": "Willy",
+      "category": "Spec",
+      "transportName": "ТС #9",
+      "position": {
+        "latitude": 55.722126,
+        "longitude": 37.557655,
+        "latitudeDelta": 0.01,
+        "longitudeDelta": 0.01
+      }
+    },
+    {
+      "driver": "Chriss",
+      "category": "Spec",
+      "transportName": "ТС #10",
+      "position": {
+        "latitude": 55.627748,
+        "longitude": 37.753860,
+        "latitudeDelta": 0.01,
+        "longitudeDelta": 0.01
+      }
+    }
   ]
 }

@@ -1,15 +1,10 @@
 import React from 'react';
 import { StyleSheet, View } from "react-native";
 import MapView, { Marker } from "react-native-maps";
+import db from '../../db/db.json';
+import Icons from '../../UI/Icons/Icons';
 
 const MapScreen = () => {
-  const tokyoRegion = {
-    latitude: 35.6762,
-    longitude: 139.6503,
-    latitudeDelta: 0.01,
-    longitudeDelta: 0.01,
-  };
-
   return (
     <View style={styles.container}>
       <MapView
@@ -17,13 +12,20 @@ const MapScreen = () => {
         zoomEnabled={true}  
         zoomControlEnabled={true}  
         initialRegion={{
-          latitude: 37.78825,
-          longitude: -122.4324,
+          latitude: 55.813182,
+          longitude: 38.120451,
           latitudeDelta: 0.0922,
           longitudeDelta: 0.0421,
         }}
       >
-        <Marker coordinate={tokyoRegion} />
+        {db.items.map(item => (
+          <Marker
+            key={item.transportName}
+            coordinate={item.position}
+          >
+            <Icons icon={item.category === 'Cargo' ? 'cargo' : item.category === 'Passenger' ? 'passenger' : 'specTransport'} />
+          </Marker>
+        ))}
       </MapView>
     </View>
   )

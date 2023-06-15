@@ -1,5 +1,6 @@
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import React, { FC } from 'react';
+import { useTranslation } from 'react-i18next';
 
 interface ITransportItem {
   transportName: string;
@@ -8,41 +9,39 @@ interface ITransportItem {
 }
 
 const TsItem: FC<ITransportItem> = ({ transportName, category, driver }) => {
+  const { t } = useTranslation();
+
   return (
-    <TouchableOpacity style={styles.field}>
-      <View style={styles.main}>
-        <Text style={styles.categoryText}>Category: {category}</Text>
-        <Text style={styles.transportText}>Transport: {transportName}</Text>
-      </View>
-      <View>
-        <Text style={styles.driverText}>Driver: {driver}</Text>
-      </View>
+    <TouchableOpacity style={styles.card}>
+      <Text style={styles.transportText}>{t('Transport')}: {transportName}</Text>
+      <Text style={styles.categoryText}>{t('Category')}: {t(category)}</Text>
+      <Text style={styles.driverText}>{t('Driver')}: {driver}</Text>
     </TouchableOpacity>
   )
 }
 
 const styles = StyleSheet.create({
-  field: {
-    width: '100%',
-    height: 50,
-    padding: 10,
-    marginBottom: 10
-  },
-  main: {
-    display: 'flex',
-    flexDirection: 'row',
-    alignItems: 'center',
-  },
-  categoryText: {
-    width: '50%',
-    fontSize: 20
+  card: {
+    width: '90%',
+    borderWidth: 1,
+    borderColor: '#000',
+    borderRadius: 10,
+    marginHorizontal: '5%',
+    marginBottom: 10,
+    padding: 10
   },
   transportText: {
-    width: '50%',
-    fontSize: 20
+    fontSize: 20,
+    color: '#000',
+    fontWeight: 'bold',
+    marginBottom: 10
+  },
+  categoryText: {
+    fontSize: 16,
+    marginRight: 10
   },
   driverText: {
-    fontSize: 20
+    fontSize: 16
   }
 })
 

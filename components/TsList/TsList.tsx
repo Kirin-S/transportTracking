@@ -5,15 +5,17 @@ import TsItem from './TsItem';
 import { Menu, Button } from 'react-native-paper';
 import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { ITransport } from '../../types/types';
+import { useTranslation } from 'react-i18next';
 
 const TsList = () => {
+  const { t } = useTranslation();
   const [data, setData] = useState<ITransport[]>(db.items);
   const [showMenu, setShowMenu] = useState(false);
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
   const [checked, setChecked] = useState({
-    cargo: false,
-    passenger: false,
-    spec: false
+    Cargo: false,
+    Passenger: false,
+    Spec: false
   });
 
   const openMenu = () => setShowMenu(true);
@@ -37,9 +39,9 @@ const TsList = () => {
   }
 
   const filters = [
-    {title: 'Cargo', value: 'cargo', checked: checked.cargo},
-    {title: 'Passenger', value: 'passenger', checked: checked.passenger},
-    {title: 'Spec', value: 'spec', checked: checked.spec},
+    {title: t('Cargo'), value: 'Cargo', checked: checked.Cargo},
+    {title: t('Passenger'), value: 'Passenger', checked: checked.Passenger},
+    {title: t('Spec'), value: 'Spec', checked: checked.Spec},
   ];
 
   const onApplyFilters = () => {
@@ -53,7 +55,7 @@ const TsList = () => {
       }
 
       return arr;
-    })
+    });
   }
 
   return (
@@ -62,7 +64,7 @@ const TsList = () => {
         <Menu
           visible={showMenu}
           onDismiss={closeMenu}
-          anchor={<Button onPress={openMenu}>Filter {activeFilters.length > 0 ? activeFilters.length : ''}</Button>}
+          anchor={<Button onPress={openMenu}>{t('Filter')} {activeFilters.length > 0 ? activeFilters.length : ''}</Button>}
           anchorPosition='bottom'
         >
           {filters.map((item: {title: string, value: string, checked: boolean}) => (
@@ -81,7 +83,7 @@ const TsList = () => {
           ))}
         </Menu>
 
-        <Button onPress={onApplyFilters}>Apply</Button>
+        <Button onPress={onApplyFilters}>{t('Apply')}</Button>
       </View>
 
       <FlatList
@@ -95,7 +97,7 @@ const TsList = () => {
 const styles = StyleSheet.create({
   filterContainer: {
     display: 'flex',
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
   filterItem: {
     padding: 10

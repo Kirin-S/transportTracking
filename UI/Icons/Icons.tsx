@@ -13,6 +13,9 @@ const Icons: FC<IIcons> = ({icon}) => {
     markerOutlined: require('../../static/icons/markerOutlined.png'),
     settings: require('../../static/icons/settings.png'),
     settingsOutlined: require('../../static/icons/settingsOutlined.png'),
+    cargo: require('../../static/icons/truck.png'),
+    passenger: require('../../static/icons/sedan.png'),
+    specTransport: require('../../static/icons/forklift.png'),
   }
 
   if (!icons[icon]) {
@@ -24,7 +27,7 @@ const Icons: FC<IIcons> = ({icon}) => {
       source={icons[icon]}
       style={{
         width: 25,
-        height: 25
+        height: 25,
       }}
     />
   )
