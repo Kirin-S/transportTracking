@@ -7,8 +7,11 @@ import BouncyCheckbox from "react-native-bouncy-checkbox";
 import { ITransport } from '../../types/types';
 import { useTranslation } from 'react-i18next';
 
+// Transport List Screen
+
 const TsList = ({ navigation }: any) => {
   const { t } = useTranslation();
+  // List of data from database
   const [data, setData] = useState<ITransport[]>(db.items);
   const [showMenu, setShowMenu] = useState(false);
   const [activeFilters, setActiveFilters] = useState<string[]>([]);
@@ -28,6 +31,8 @@ const TsList = ({ navigation }: any) => {
     setActiveFilters(prev => {
       let arr = [...prev];
 
+      // If category is already active then remove it
+      // else add
       if (arr.includes(category)) {
         arr = arr.filter((item: any) => item !== category);
       } else {
@@ -48,6 +53,8 @@ const TsList = ({ navigation }: any) => {
     setData(prev => {
       let arr = [...prev];
 
+      // if there are active filters then filter the list
+      // else show all
       if (activeFilters.length) {
         arr = db.items.filter((item: ITransport) => activeFilters.includes(item.category));
       } else {

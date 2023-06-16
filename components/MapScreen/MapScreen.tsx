@@ -4,6 +4,8 @@ import MapView, { Marker } from "react-native-maps";
 import db from '../../db/db.json';
 import Icons from '../../UI/Icons/Icons';
 
+// Map screen
+
 const MapScreen = () => {
   return (
     <View style={styles.container}>

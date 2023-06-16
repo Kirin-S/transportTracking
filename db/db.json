@@ -4,6 +4,7 @@
       "driver": "John",
       "category": "Cargo",
       "transportName": "ТС #1",
+      "phoneNumber": "+79995671754",
       "position": {
         "latitude": 56.327527,
         "longitude": 43.915138,
@@ -15,6 +16,7 @@
       "driver": "Alex",
       "category": "Cargo",
       "transportName": "ТС #2",
+      "phoneNumber": "+79874561345",
       "position": {
         "latitude": 56.275769,
         "longitude": 44.030983,
@@ -26,6 +28,7 @@
       "driver": "Jake",
       "category": "Cargo",
       "transportName": "ТС #3",
+      "phoneNumber": "+79530754490",
       "position": {
         "latitude": 55.420494,
         "longitude": 43.910944,
@@ -37,6 +40,7 @@
       "driver": "Barry",
       "category": "Cargo",
       "transportName": "ТС #4",
+      "phoneNumber": "+79990907632",
       "position": {
         "latitude": 54.959115,
         "longitude": 41.363721,
@@ -48,6 +52,7 @@
       "driver": "Helen",
       "category": "Passenger",
       "transportName": "ТС #5",
+      "phoneNumber": "+79876543221",
       "position": {
         "latitude": 56.830533,
         "longitude": 35.969181,
@@ -59,6 +64,7 @@
       "driver": "Jane",
       "category": "Passenger",
       "transportName": "ТС #6",
+      "phoneNumber": "+79534890765",
       "position": {
         "latitude": 56.834148,
         "longitude": 35.965169,
@@ -70,6 +76,7 @@
       "driver": "Bob",
       "category": "Passenger",
       "transportName": "ТС #7",
+      "phoneNumber": "+79022893764",
       "position": {
         "latitude": 54.495866,
         "longitude": 36.231622,
@@ -81,6 +88,7 @@
       "driver": "Rally",
       "category": "Spec",
       "transportName": "ТС #8",
+      "phoneNumber": "+79991237804",
       "position": {
         "latitude": 55.740833,
         "longitude": 37.694309,
@@ -92,6 +100,7 @@
       "driver": "Willy",
       "category": "Spec",
       "transportName": "ТС #9",
+      "phoneNumber": "+79205461819",
       "position": {
         "latitude": 55.722126,
         "longitude": 37.557655,
@@ -103,6 +112,7 @@
       "driver": "Chriss",
       "category": "Spec",
       "transportName": "ТС #10",
+      "phoneNumber": "+79990412748",
       "position": {
         "latitude": 55.627748,
         "longitude": 37.753860,

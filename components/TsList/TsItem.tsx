@@ -1,6 +1,8 @@
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
+import { Text, TouchableOpacity, StyleSheet } from 'react-native';
 import React, { FC } from 'react';
 import { useTranslation } from 'react-i18next';
+
+// Transport list item component
 
 interface ITransportItem {
   transportName: string;
@@ -13,7 +15,7 @@ const TsItem: FC<ITransportItem> = ({ transportName, category, driver, navigatio
   const { t } = useTranslation();
 
   return (
-    <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('DriverScreen')}>
+    <TouchableOpacity style={styles.card} onPress={() => navigation.navigate('DriverScreen', {transportName})}>
       <Text style={styles.transportText}>{t('Transport')}: {transportName}</Text>
       <Text style={styles.categoryText}>{t('Category')}: {t(category)}</Text>
       <Text style={styles.driverText}>{t('Driver')}: {driver}</Text>

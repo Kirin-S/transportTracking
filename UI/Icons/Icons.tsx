@@ -1,6 +1,8 @@
 import { Image, View } from 'react-native';
 import React, { FC } from 'react';
 
+// Getting an icon by name component
+
 interface IIcons {
   icon: string;
 }

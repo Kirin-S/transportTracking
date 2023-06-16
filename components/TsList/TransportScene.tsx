@@ -4,6 +4,8 @@ import TsList from './TsList';
 import DriverScreen from '../DriverScreen/DriverScreen';
 import { useTranslation } from 'react-i18next';
 
+// Transport Screen with 2 scenes. 1 - list of transport, 2 - transport info
+
 const Stack = createNativeStackNavigator();
 
 const TransportScene = () => {
